@@ -1,0 +1,75 @@
+body {
+    background-color:  #666666;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    overflow: hidden;
+    background-color: #93C043;
+    position: relative;
+}
+
+
+
+/************************ Header **********************8*/
+header img  {
+   background-color: #93C043;
+   height: 45px;  
+
+}
+
+
+#shipport {
+    text-align: left;
+    font-weight: bold;
+    background-color: white;
+    position: relative;
+    padding: 20px 20px;
+}
+
+
+#tracker {
+    position: relative;
+}
+
+
+
+#trackingNumber {
+    color: #93C043;
+    width: 100%;
+
+}
+
+#trackButton {
+    background-color: olivedrab;
+    border-style: solid;
+    height: 32px;
+    border-color: black;
+    width: 100%;
+    color: white;
+}
+
+#buttonPad {
+    padding-bottom: 100px;
+}
+
+.absBot {
+    position: absolute;
+    bottom: 0;
+}
+
+#login {
+    left:0;    
+    width: 50%;
+}
+
+#signup {
+    right:0;
+    width: 50%;            
+}
+
+/*********************************************/

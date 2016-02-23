@@ -1,0 +1,193 @@
+/*----RESET----*/
+
+article,
+aside,
+body,
+blockquote,
+canvas,
+div,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+header,
+html,
+img,
+object,
+nav,
+main,
+p,
+section  {
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+
+html,
+body  {
+  font-size:18px;
+  line-height:1.45;
+}
+
+sub,
+sup  {
+  line-height:0;
+}
+
+h1,h2,h3,h4,h5,h6  {font-weight:bold; margin-top:0;}
+h1  {font-size:2.625em;}
+h2  {font-size:1.625em;}
+h3  {font-size:1.25em;}
+h4  {font-size:1.23em;}
+h5  {font-size:0.83em;}
+h6  {font-size:0.67em;}
+
+ul  {
+  list-style-type:none;
+}
+
+iframe  {
+  margin:0;
+  padding:0;
+  border-width:0;
+}
+
+::before,
+:before,
+::after,
+:after  {
+  content: "";
+}
+
+a:link,
+a:visited  {
+  color:#00f;
+  text-decoration:none;
+}
+
+a:focus  {
+  color:#f00;
+}
+
+a:hover  {
+  color:#f00;
+}
+
+a:active  {
+  color:#00f;
+}
+
+/*chrome reset*/
+ul, menu, dir  {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+/*----PRESETS----//
+*
+*
+*
+*/
+
+html,
+body  {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+}
+
+.resBoxSingle,
+.resBoxDouble,
+.resBoxTriple  {
+  position: relative;
+  width:100%;
+}
+
+.resBoxSingle .resContent,
+.resBoxDouble .resContent,
+.resBoxTriple .resContent {
+  overflow:hidden;
+  max-width:100%;
+}
+
+.resBoxSingle .resContent img,
+.resBoxDouble .resContent img,
+.resBoxTriple .resContent img  {
+  float:left;
+}
+
+.resBoxDouble {
+  max-width:50%;
+  float:left;
+}
+
+.resBoxTriple {
+  width:33.3%;
+  display:inline-block;
+  float:left;
+}
+
+.resBoxSingle p,
+.resBoxDouble p,
+.resBoxTriple p  {
+  padding:.7em;
+  text-align:left;
+  white-space:pre-wrap;
+}
+
+/*Start @media queries*/
+@media all and (max-width: 1000px) {
+  body  {
+    font-size:22px;
+    line-height:1.5;
+  }
+
+  .resBoxTriple  {
+    position: relative;
+    width:100%;
+    max-width:50%;
+    float:left;
+  }
+}
+
+@media all and (max-width: 715px) {
+  header h1  {
+    top:.4em;
+  }
+
+  .resBoxDouble,
+  .resBoxTriple  {
+    position: relative;
+    width:100%;
+    max-width:initial;
+  }
+}
+
+@media all and (max-width: 401px) {
+  body  {
+    font-size:18px;
+    line-height:1.5;
+  }
+
+  header h1  {
+    top:.4em;
+  }
+
+  .resBoxDouble,
+  .resBoxTriple  {
+    position: relative;
+    width:100%;
+    max-width:initial;
+  }
+}

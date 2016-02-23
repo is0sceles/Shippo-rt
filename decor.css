@@ -1,0 +1,124 @@
+@font-face  {
+  font-family: title;
+  src: url(/skins/default/fonts/daniel.ttf);
+}
+
+body  {
+  color:#000;
+  background:#333;
+}
+
+header  {
+  position:relative;
+  //background:url(/skins/default/images/bg.png) no-repeat 0 0;
+  height:300px;
+  width:100%;
+  background-size:cover;
+}
+
+nav  {
+  background: rgba(22, 22, 22, .9);
+}
+
+header h1  {
+  position:relative;
+  z-index:20;
+  top:1.5em;
+  font-size:3em;
+  line-height:1.1em;
+  color:#222;
+  font-family:title;
+}
+
+header h2  {
+  position:relative;
+  z-index:20;
+  top:2.8em;
+  font-size:1em;
+  line-height:1.1em;
+}
+
+header .logo  {
+  margin:10px 0 0 13%;
+  height:215px;
+  float:left;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+#actLogin:hover  {
+  color:rgba(200, 0, 0, 1);
+}
+
+a:link,
+a:active,
+a:visited  {
+  color:#aac;
+}
+
+a:hover  {
+  color:#3c00bb;
+}
+
+footer  {
+  color:#caa;
+  background:rgba(22, 22, 22, .9);
+}
+
+/*Start @media queries*/
+@media all and (max-width: 1000px) {
+  body  {
+    font-size:22px;
+    line-height:1.5;
+  }
+
+  .resBoxTriple  {
+    position: relative;
+    width:100%;
+    max-width:50%;
+    float:left;
+  }
+}
+
+@media all and (max-width: 715px) {
+  header h1  {
+    top:.4em;
+  }
+
+  .resBoxDouble,
+  .resBoxTriple  {
+    position: relative;
+    width:100%;
+    max-width:initial;
+  }
+}
+
+@media all and (max-width: 401px) {
+  body  {
+    font-size:18px;
+    line-height:1.5;
+  }
+
+header .logo  {
+  margin:30px 0 0 13%;
+  height:175px;
+}
+
+  header h1  {
+    top:1.5em;
+    font-size:2em;
+  }
+
+  header h2  {
+    font-size:.9em;
+  }
+
+  .resBoxDouble,
+  .resBoxTriple  {
+    position: relative;
+    width:100%;
+    max-width:initial;
+  }
+}
